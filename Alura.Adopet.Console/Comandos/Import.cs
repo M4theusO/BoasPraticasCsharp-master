@@ -4,7 +4,7 @@ using Alura.Adopet.Console.Util;
 
 namespace Alura.Adopet.Console.Comandos
 {
-    [DocComando(instrucao: "import",
+    [DocComandoAttribute(instrucao: "import",
         documentacao: "adopet import <ARQUIVO> comando que realiza a importação do arquivo de pets.")]
     internal class Import:IComando
     {

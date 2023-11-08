@@ -15,10 +15,10 @@ namespace Alura.Adopet.Testes
         public void QuandoExistemComandosDeveRetornarDicionarioNaoVazio()
         {
             //Arrange
-            Assembly assemblyComOTipoDocComando = Assembly.GetAssembly(typeof(DocComando))!;
+            Assembly assemblyComOTipoDocComando = Assembly.GetAssembly(typeof(DocComandoAttribute))!;
 
             //Act
-            Dictionary<string, DocComando> dicionario =
+            Dictionary<string, DocComandoAttribute> dicionario =
                   DocumentacaoDoSistema.ToDictionary(assemblyComOTipoDocComando);
 
             //Assert            
